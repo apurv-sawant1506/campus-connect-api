@@ -1,14 +1,6 @@
-To handle any exception:
-Create an object of ExceptionResponse.class
-Return the response entity eg: ResponseEntity<>(exceptionResponse , Httpstatus.NOT_FOUND)
-
-To create our own exceptions:
-For eg: to create MyCustomException, create a class of that exception:
-
-public class MyCustomException extends RuntimeException{
-    public MyCustomException(String message){
-        super(message);
-    }
-}
-
-..throw MyCustomException("Exception Details")
+For committee profile:
+Files created:
+entity -> CommitteeProfile.java 
+repository -> CommitteeProfileRepository.java
+service -> CommitteeProfileService.java
+controller -> CommitteeProfileController.java
